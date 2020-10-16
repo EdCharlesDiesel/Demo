@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { LoginComponent } from './user/login.component';
 import { Error404Component } from './error404/error404.component';
 import { HomeComponent } from './home/home.component';
-import { CustomerComponent } from './customers/customer.component';
+
 
 
 const routes: Routes = [
@@ -12,7 +12,7 @@ const routes: Routes = [
 
   { path: '', redirectTo: '/home', pathMatch: 'full' },  
   { path: 'home', component: HomeComponent },
-  { path: 'customer', component: CustomerComponent },   
+  
    
   // { path: 'will-detail/:willId', component: WillDetailComponent },
   // { path: 'will-update/:willId', component: WillUpdateComponent },  

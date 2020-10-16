@@ -173,6 +173,40 @@
     </div>
   </div>
 </div>
+
+<div *ngIf="willForm.get('firstEpp').value">
+  <div formArrayName="firstParticipants">
+    
+
+    <div class="form-group row mb-2" >
+
+      <label class="col-md-2 col-form-label"
+      for="firstParticipantTitleId">Title:</label>
+
+      <div class="col-md-8">
+        <input class="form-control"
+               for="firstParticipantTitleId"
+               type="text"
+               placeholder="Title"
+               readonly
+               [formControlName]="firstParticipantTitle" />
+      </div>
+    </div>   
+
+    <div class="form-group row mb-2" >
+
+      <label class="col-md-2 col-form-label"
+      for="firstParticipantGenderId">Gender:</label>
+
+      <div class="col-md-8">
+        <input class="form-control"
+               for="firstParticipantGenderId"
+               type="text"
+               readonly
+               placeholder="Gender"
+               [formControlName]="firstParticipantGender" />
+      </div>
+    </div>
           <div class="form-group row mb-2" >
 
             <label class="col-md-2 col-form-label"
@@ -183,6 +217,7 @@
                      for="firstParticipantFirstNameId"
                      type="text"
                      placeholder="First Name"
+                     readonly
                      [formControlName]="firstParticipantFirstName" />
             </div>
           </div>
@@ -195,9 +230,71 @@
                      for="firstParticipantSurnameId"
                      type="text"
                      placeholder="Surname"
+                     readonly
                      [formControlName]="firstParticipantSurname" />
             </div>
           </div>
+
+
+          <div class="form-group row mb-2" >
+
+            <label class="col-md-2 col-form-label"
+            for="firstParticipantImmediateCashPaymentId">Immediate Cash Payment:</label>
+      
+            <div class="col-md-8">
+              <input class="form-control"
+                     for="firstParticipantImmediateCashPaymentId"
+                     type="text"
+                     placeholder="Immediate Cash Payment"
+                     [formControlName]="firstParticipantImmediateCashPayment" />
+            </div>
+          </div>
+
+
+          <div class="form-group row mb-2" >
+
+            <label class="col-md-2 col-form-label"
+            for="firstParticipantEmailAddressId">Email Address:</label>
+      
+            <div class="col-md-8">
+              <input class="form-control"
+                     for="firstParticipantEmailAddressId"
+                     type="text"
+                     placeholder="Email Address"
+                     [formControlName]="firstParticipantEmailAddress" />
+            </div>
+          </div>
+
+          <div class="form-group row mb-2" >
+
+            <label class="col-md-2 col-form-label"
+            for="firstParticipantRefereeredById">Refereered By:</label>
+      
+            <div class="col-md-8">
+              <input class="form-control"
+                     for="firstParticipantRefereeredById"
+                     type="text"
+                     placeholder="Refereered By"
+                     [formControlName]="firstParticipantRefereeredBy" />
+            </div>
+          </div>
+
+          <div class="form-group row mb-2" >
+
+            <label class="col-md-2 col-form-label"
+            for="firstParticipantImmediateCashPaymentId">Immediate Cash Payment:</label>
+      
+            <div class="col-md-8">
+              <input class="form-control"
+                     for="firstParticipantImmediateCashPaymentId"
+                     type="text"
+                     placeholder="Immediate Cash Payment"
+                     [formControlName]="firstParticipantImmediateCashPayment" />
+            </div>
+          </div>
+
+
+
           <div class="form-group row mb-2" >
             <label class="col-md-2 col-form-label"
             for="firstParticipantSmokingStatusId">Smoking:</label>
@@ -216,10 +313,14 @@
                     (click)="addParticipants()">Add Epp
             </button>
           </div>
-          <hr>
-          <div></div>
-          <h5>2nd Participants</h5>
-          
+
+  </div>
+</div>
+
+
+ <hr>
+<h5>2nd Participants</h5> 
+
 <div class="form-group row mb-2">
   <div class="col-md-8">
     <div class="form-check">
@@ -233,33 +334,122 @@
   </div>
 </div>
 
+<div *ngIf="willForm.get('secondEpp').value">
+  <div formArrayName="secondParticipants">
 
-          <div class="form-group row mb-2" >
+
+    <div class="form-group row mb-2" >
+
+      <label class="col-md-2 col-form-label"
+      for="secondParticipantTitleId">Title:</label>
+
+      <div class="col-md-8">
+        <input class="form-control"
+               for="secondParticipantTitleId"
+               type="text"
+               placeholder="Title"
+               [formControlName]="secondParticipantTitle" 
+               readonly/>
+      </div>
+    </div>   
+
+    <div class="form-group row mb-2" >
+
+      <label class="col-md-2 col-form-label"
+      for="secondParticipantGenderId">Gender:</label>
+
+      <div class="col-md-8">
+        <input class="form-control"
+               for="secondParticipantGenderId"
+               type="text"
+               placeholder="Gender"
+               [formControlName]="secondParticipantGender" />
+      </div>
+    </div>
+
+    <div class="form-group row mb-2" >
 
             <label class="col-md-2 col-form-label"
-            for="SecondParticipantFirstNameId">First Name:</label>
+            for="secondParticipantFirstNameId">First Name:</label>
   
             <div class="col-md-8">
               <input class="form-control"
-                     for="SecondParticipantFirstNameId"
+                     for="secondParticipantFirstNameId"
                      type="text"
                      placeholder="First Name"
-                     [formControlName]="SecondParticipantFirstName" />
+                     [formControlName]="secondParticipantFirstName" />
             </div>
-          </div>
-          <div class="form-group row mb-2" >
+    </div>
+
+    <div class="form-group row mb-2" >
             <label class="col-md-2 col-form-label"
-            for="SecondParticipantSurnameId">Surname:</label>
+            for="secondParticipantSurnameId">Surname:</label>
   
             <div class="col-md-8">
               <input class="form-control"
-                     for="SecondParticipantSurnameId"
+                     for="secondParticipantSurnameId"
                      type="text"
                      placeholder="Surname"
-                     [formControlName]="SecondParticipantSurname" />
+                     [formControlName]="secondParticipantSurname" />
             </div>
-          </div>
-          <div class="form-group row mb-2" >
+    </div>
+
+    <div class="form-group row mb-2" >
+            <label class="col-md-2 col-form-label"
+            for="secondParticipantImmediateCashPaymentId">Immediate Cash Payment:</label>
+      
+            <div class="col-md-8">
+              <input class="form-control"
+                     for="secondParticipantImmediateCashPaymentId"
+                     type="text"
+                     placeholder="Immediate Cash Payment"
+                     [formControlName]="secondParticipantImmediateCashPayment" />
+            </div>
+    </div>
+
+    <div class="form-group row mb-2" >
+
+            <label class="col-md-2 col-form-label"
+            for="secondParticipantEmailAddressId">Email Address:</label>
+      
+            <div class="col-md-8">
+              <input class="form-control"
+                     for="secondParticipantEmailAddressId"
+                     type="text"
+                     placeholder="Email Address"
+                     [formControlName]="secondParticipantEmailAddress" />
+            </div>
+    </div>
+
+    <div class="form-group row mb-2" >
+
+            <label class="col-md-2 col-form-label"
+            for="secondParticipantRefereeredById">Refereered By:</label>
+      
+            <div class="col-md-8">
+              <input class="form-control"
+                     for="secondParticipantRefereeredById"
+                     type="text"
+                     placeholder="Refereered By"
+                     [formControlName]="secondParticipantRefereeredBy" />
+            </div>
+    </div>
+
+    <div class="form-group row mb-2" >
+
+            <label class="col-md-2 col-form-label"
+            for="secondParticipantImmediateCashPaymentId">Immediate Cash Payment:</label>
+      
+            <div class="col-md-8">
+              <input class="form-control"
+                     for="secondParticipantImmediateCashPaymentId"
+                     type="text"
+                     placeholder="Immediate Cash Payment"
+                     [formControlName]="secondParticipantImmediateCashPayment" />
+            </div>
+    </div>
+
+    <div class="form-group row mb-2" >
             <label class="col-md-2 col-form-label"
             for="SecondParticipantSmokingStatusId">Smoking:</label>
   
@@ -276,52 +466,35 @@
                     title="Add Epp"
                     (click)="addParticipants()">Add Epp
             </button>
-          </div>
-    
-  
-        <!-- <div class="row">
-          <div class="col-md-2 mb-2">
-            <button class="btn btn-outline-secondary btn-sm"
-                    type="button"
-                    title="Add a search tag"
-                    (click)="addParticipants()">Show Participant
-            </button>
-          
-          </div>
-        </div>   -->
-        <div class="form-group row mb-2">
-          <div class="offset-md-2 col-md-4">
-            <button class="btn btn-primary mr-3"
-                    style="width:80px;"
-                    type="submit"
-                    [title]="willForm.valid ? 'Save your entered data' : 'Disabled until the form data is valid'"
-                    [disabled]="!willForm.valid">
-              Save
-            </button>
-            <button class="btn btn-outline-secondary mr-3"
-                    style="width:80px;"
-                    type="button"
-                    title="Cancel your edits"
-                    [routerLink]="['/Wills']">
-              Cancel
-            </button>
-            <!-- <button class="btn btn-outline-warning"
-                    style="width:80px"
-                    type="button"
-                    title="Delete this will"
-                    (click)="deleteWill()">
-              Delete
-            </button> -->
-          </div>
-        </div>
-      </form>
     </div>
-  
+    
+</div>
+</div>
+
+<div class="form-group row mb-2">
+  <div class="offset-md-2 col-md-4">
+    <button class="btn btn-primary mr-3"
+            style="width:80px;"
+            type="submit"
+            [title]="willForm.valid ? 'Save your entered data' : 'Disabled until the form data is valid'"
+            >
+      Save
+    </button>
+    <button class="btn btn-outline-secondary mr-3"
+            style="width:80px;"
+            type="button"
+            title="Cancel your edits"
+            [routerLink]="['/Wills']">
+      Cancel
+    </button>     
+  </div>
+</div>
+      </form>
+    </div>  
     <div class="alert alert-danger"
          *ngIf="errorMessage">{{errorMessage}}
-    </div>
-
-    
+    </div>    
   </div>
+  
 
   

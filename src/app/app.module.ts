@@ -11,33 +11,37 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './home/welcome.component';
-import { ProductModule } from './products/product.module';
-import { AddEppComponent } from './add-epp/add-epp.component';
-import { CustomerComponent } from './customers/customer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ModalComponent } from './modal/modal.component';
+import { MatButtonModule } from '@angular/material/button/typings/button-module';
+import { MatDialogModule } from '@angular/material/dialog/typings/dialog-module';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomeComponent,
-    AddEppComponent,
-    CustomerComponent,    
+    WelcomeComponent,   
     NavMenuComponent,
     SimpleModalComponent,
     Error404Component,
-    HomeComponent
+    HomeComponent,
+    ModalComponent
 
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
+    HttpClientModule,    
+   
     RouterModule.forRoot([
       { path: 'welcome', component: WelcomeComponent },
       { path: '', redirectTo: 'welcome', pathMatch: 'full' },
       { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
     ]),
-    ProductModule,
-    WillModule
+
+    WillModule,
+
+    BrowserAnimationsModule
   ],
   bootstrap: [AppComponent]
 })

@@ -19,7 +19,10 @@ export class WillData implements InMemoryDbService {
         postlAddrLine1: "13 RES STREET",
         postlSuburb:"MALAN",
         noOfJointPartcpnt:"0",
-        participants: ['Kagiso', 'Naledi']
+        firstParticipants: [''],
+
+        firstEpp:true,
+        secondEpp:true
     }]  ;
     return { wills };
   }

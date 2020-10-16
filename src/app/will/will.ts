@@ -2,10 +2,11 @@ export interface Will
 {
 
   firstEpp: boolean,
-  secondEpp: boolean
+  secondEpp: boolean,
 
 
-  participants?: string[];
+  firstParticipants?: string[];
+
   willNumber:string,
   id:number,
   indCifRecFound?: string,

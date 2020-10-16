@@ -109,7 +109,7 @@ export class WillService {
       postlAddrLine1:'',
       postlSuburb:'',
       noOfJointPartcpnt:'',
-      participants:[''],
+      
       
       firstEpp:true,
       secondEpp:true

@@ -25,6 +25,7 @@ export class WillEditComponent implements OnInit, AfterViewInit, OnDestroy {
   SecondParticipantFirstName: FormControl;
   SecondParticipantSurname: FormControl;
   SecondParticipantSmokingStatus: FormControl;
+
   firstEpp: FormControl;
   secondEpp: FormControl;
 
@@ -60,7 +61,8 @@ export class WillEditComponent implements OnInit, AfterViewInit, OnDestroy {
       postlAddrLine1: ['', Validators.required],
       postlSuburb: ['', Validators.required],
       noOfJointPartcpnt: ['', Validators.required],
-      participants: this.formBuilder.array([this.buildParticipants()]),
+      firstParticipants: this.formBuilder.array([this.buildFirstParticipants()]),
+      // secondParticipants: this.formBuilder.array([this.buildSecondParticipants()]),
       firstEpp: true,
       secondEpp: true
 
@@ -94,8 +96,12 @@ export class WillEditComponent implements OnInit, AfterViewInit, OnDestroy {
       // this.displayMessage = this.genericValidator.processMessages(this.willForm);
     });
   }
-  addParticipants(): void {
-    this.participants.push(new FormControl());
+  // addParticipants(): void {
+  //   this.participants.push(new FormControl());
+  // }
+
+    addParticipants(): void {
+    this.participants.push(this.buildFirstParticipants());
   }
 
   deleteParticipants(index: number): void {
@@ -139,11 +145,12 @@ export class WillEditComponent implements OnInit, AfterViewInit, OnDestroy {
       postlAddrLine1: this.will.postlAddrLine1,
       postlSuburb: this.will.postlSuburb,
       noOfJointPartcpnt: this.will.noOfJointPartcpnt,
-      participants: this.formBuilder.array([this.buildParticipants()]),
+      firstParticipants: this.formBuilder.array([this.buildFirstParticipants()]),
+      SecondParticipants: this.formBuilder.array([this.buildSecondParticipants()]),
       firstEpp: true,
       secondEpp: true
     });
-    this.willForm.setControl('participants', this.formBuilder.array(this.will.participants || []));
+    this.willForm.setControl('firstParticipants', this.formBuilder.array(this.will.firstParticipants || []));
   }
 
   deleteWill(): void {
@@ -194,17 +201,35 @@ export class WillEditComponent implements OnInit, AfterViewInit, OnDestroy {
     this.router.navigate(['/wills']);
   }
 
-  buildParticipants(): FormGroup {
+  buildFirstParticipants(): FormGroup {
     return this.formBuilder.group({
-      firstParticipantFirstName: ['', Validators.required],
-      firstParticipantSurname: ['', Validators.required],
-      firstParticipantSmokingStatus: ['', Validators.required],
-      SecondParticipantFirstName: ['', Validators.required],
-      SecondParticipantSurname: ['', Validators.required],
-      SecondParticipantSmokingStatus: ['', Validators.required],
-      firstEpp:true
+      firstParticipantTitle:[''],
+      firstParticipantFirstName: [''],
+      firstParticipantSurname: [''],
+      firstParticipantSmokingStatus: [''],
+      firstParticipantEmailAddress:[''],
+      firstParticipantRefereeredBy:[''],
+      firstParticipantRefereeredEmail:[''],
+      firstParticipantImmediateCashPayment:['', Validators.required,Validators.maxLength(50000)],
+      firstParticipantGender:[''],
+      firstParticipantDateofBirth:['']
     });
   }
+
+  buildSecondParticipants(): FormGroup {
+    return this.formBuilder.group({
+      secondParticipantTitle:[''],
+      SecondParticipantFirstName: [''],
+      SecondParticipantSurname: [''],
+      SecondParticipantSmokingStatus: [''],
+      secondParticipantEmailAddress:[''],
+      secondParticipantRefereeredBy:[''],
+      secondParticipantRefereeredEmail:[''],
+      secondParticipantImmediateCashPayment:['', Validators.required,Validators.maxLength(50000)],
+      secondParticipantGender:[''],
+      secondParticipantDateofBirth:['']
+    });
+  }  
 }
 
 
