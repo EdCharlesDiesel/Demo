@@ -1,0 +1,72 @@
+<div class="card">
+   <div class="card-header"
+        >
+     {{pageTitle }}
+   </div>
+ 
+   <div class="card-body"   >
+ 
+     <div class="row">
+ 
+       <div class="col-md-8">
+         <div class="row">
+           <div class="col-md-3">Will Number:</div>
+           <!-- <div class="col-md-6">{{will.willNumber}}</div> -->
+         </div>
+         <div class="row">
+           <div class="col-md-3">Client Code:</div>
+           <!-- <div class="col-md-6">{{will.clientCode}}</div> -->
+         </div>
+         <div class="row">
+           <div class="col-md-3">Surname:</div>
+           <!-- <div class="col-md-6">{{will.surname}}</div> -->
+         </div>
+         <div class="row">
+           <div class="col-md-3">ID Number:</div>
+           <!-- <div class="col-md-6">{{will.IdNumber:}}</div> -->
+         </div>
+         <div class="row">
+           <div class="col-md-3">Birth Date:</div>
+           <!-- <div class="col-md-6">{{will.birthDate|todayDate | date}}</div> -->
+         </div>
+         <div class="row">
+           <div class="col-md-3">Initials:</div>
+           <!-- <div class="col-md-6">{{will.initials}}</div>            -->
+         </div>
+         <div class="row">
+           <div class="col-md-3">Gender:</div>
+           <!-- <div class="col-md-6">{{will.Gender}}</div> -->
+         </div>
+         <div class="row">
+            <div class="col-md-3">Postal Address:</div>
+            <!-- <div class="col-md-6">{{will.postlAddrLine1}}</div> -->
+          </div>
+          <div class="row">
+            <div class="col-md-3">Postal Surburb:</div>
+            <!-- <div class="col-md-6">{{will.postlSuburbId}}</div> -->
+          </div>
+       </div> 
+      
+     </div>
+ 
+     <div class="row mt-4">
+       <div class="col-md-4">
+         <button class="btn btn-outline-secondary mr-3"
+                 style="width:80px"
+                 (click)="onBack()">
+            Back
+         </button>
+         <button class="btn btn-outline-primary"
+                 style="width:80px"
+                 [routerLink]="['/wills', will.id, 'edit']">
+           Edit
+         </button>
+       </div>
+     </div>
+ 
+   </div>
+ 
+   <div class="alert alert-danger"
+        *ngIf="errorMessage">{{errorMessage}}
+   </div>
+ </div>

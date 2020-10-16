@@ -1,0 +1,33 @@
+
+<div class="card">
+  <div class="card-header">
+    Login
+  </div>
+  <div class="card-body">
+    <form novalidate
+          (ngSubmit)="login()"
+          [formGroup]="loginForm">
+
+    <div class="form-group" >
+      <label for="userNameId">User Name:</label>
+      
+      <input  
+      id="userNameId"
+       type="text"
+        class="form-control" 
+       formControlName="userName"
+       placeholder="User Name..." />
+    </div>
+    <div class="form-group" >
+      <label for="passwordId">Password:</label>      
+      <input 
+              id="passwordId" 
+              type="password" 
+              class="form-control"
+              formControlName="password"
+              placeholder="Password..." />
+    </div>
+    
+
+  </form>
+</div> 

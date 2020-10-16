@@ -1,0 +1,327 @@
+<div class="card">
+    <div class="card-header">
+      {{pageTitle}}  
+    </div>
+  
+    <div class="card-body">
+       <form novalidate
+            (ngSubmit)="saveWill()"
+            [formGroup]="willForm">
+  
+     <div class="form-group row mb-2">
+          <label class="col-md-2 col-form-label"
+                 for="willNumberId">Will Number:</label>
+          <div class="col-md-8">
+            <input class="form-control"
+                   id="willNumberId"
+                   type="text"
+                   readonly
+                   placeholder="Will number (required)"
+                   formControlName="willNumber"
+                   [ngClass]="{'is-invalid': displayMessage.willNumber }" />
+            <span class="invalid-feedback">
+              {{displayMessage.willNumber}}
+            </span>
+          </div>
+        </div>
+  
+        <div class="form-group row mb-2">
+          <label class="col-md-2 col-form-label"
+                 for="clientCodeid">Client Code:</label>
+          <div class="col-md-8">
+            <input class="form-control"
+                   id="clientCodeid"
+                   type="text"
+                   readonly
+                   placeholder="Client Code (required)"
+                   formControlName="clientCode"
+                   [ngClass]="{'is-invalid': displayMessage.clientCode}" />
+            <span class="invalid-feedback">
+              {{displayMessage.clientCode}}
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group row mb-2">
+          <label class="col-md-2 col-form-label"
+                 for="surnameId">Surname:</label>
+  
+          <div class="col-md-8">
+            <input class="form-control"
+                      id="surnameId"
+                      readonly                   
+                      formControlName="surname"
+                      [ngClass]="{'is-invalid': displayMessage.surname}"/>
+            <span class="invalid-feedback">
+              {{ displayMessage.surname}}
+            </span>
+          </div>
+        </div>
+
+
+        <div class="form-group row mb-2">
+          <label class="col-md-2 col-form-label"
+                 for="idNumberId">ID Number:</label>
+  
+          <div class="col-md-8">
+            <input class="form-control"
+                      id="idNumberId"
+                      readonly                   
+                      formControlName="idNumber"
+                      [ngClass]="{'is-invalid': displayMessage.idNumber}"/>
+            <span class="invalid-feedback">
+              {{ displayMessage.idNumber}}
+            </span>
+          </div>
+        </div>
+
+        
+
+        <div class="form-group row mb-2">
+          <label class="col-md-2 col-form-label"
+                 for="birthDateid">Birth Date:</label>
+          <div class="col-md-8">
+            <input class="form-control"
+                   id="birthDateid"
+                   type="text"
+                   readonly
+                   placeholder="Birth Date (required)"
+                   formControlName="birthDate"
+                   [ngClass]="{'is-invalid': displayMessage.birthDateid}" />
+            <span class="invalid-feedback">
+              {{displayMessage.birthDateid}}
+            </span>
+          </div>
+        </div>
+        <div class="form-group row mb-2">
+          <label class="col-md-2 col-form-label"
+                 for="initialsId">Initials:</label>
+  
+          <div class="col-md-8">
+            <input class="form-control"
+                      id="initialsId"
+                      readonly                   
+                      formControlName="initials"
+                      [ngClass]="{'is-invalid': displayMessage.initials}"/>
+            <span class="invalid-feedback">
+              {{ displayMessage.initials}}
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group row mb-2">
+          <label class="col-md-2 col-form-label"
+                 for="genderId">Gender:</label>
+  
+          <div class="col-md-8">
+            <input class="form-control"
+                      id="genderId"
+                      readonly                   
+                      formControlName="gender"
+                      [ngClass]="{'is-invalid': displayMessage.gender}"/>
+            <span class="invalid-feedback">
+              {{ displayMessage.gender}}
+            </span>
+          </div>
+        </div>     
+
+        <div class="form-group row mb-2">
+          <label class="col-md-2 col-form-label"
+                 for="postlAddrLine1Id">Postal Address:</label>
+  
+          <div class="col-md-8">
+            <textarea class="form-control"
+                      id="postlAddrLine1Id"
+                      placeholder="postlAddrLine1"
+                      rows=3
+                      formControlName="postlAddrLine1"
+                      [ngClass]="{'is-invalid': displayMessage.postlAddrLine1}"></textarea>
+            <span class="invalid-feedback">
+              {{ displayMessage.postlAddrLine1}}
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group row mb-2">
+          <label class="col-md-2 col-form-label"
+                 for="postlSuburbId">Postal Surburb:</label>
+  
+          <div class="col-md-8">
+            <input class="form-control"
+                      id="postlSuburbId"
+                      placeholder="Postal Surburb"
+                      formControlName="postlSuburb"
+                      [ngClass]="{'is-invalid': displayMessage.postlSuburb}"/>
+            <span class="invalid-feedback">
+              {{ displayMessage.postlSuburb}}
+            </span>
+          </div>
+        </div>  
+<hr>
+<h5>1st Participants</h5>
+
+
+<div class="form-group row mb-2">
+  <div class="col-md-8">
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input"
+               id="firstEppId"
+               type="checkbox"
+               formControlName="firstEpp">Is Epp
+      </label>
+    </div>
+  </div>
+</div>
+          <div class="form-group row mb-2" >
+
+            <label class="col-md-2 col-form-label"
+            for="firstParticipantFirstNameId">First Name:</label>
+  
+            <div class="col-md-8">
+              <input class="form-control"
+                     for="firstParticipantFirstNameId"
+                     type="text"
+                     placeholder="First Name"
+                     [formControlName]="firstParticipantFirstName" />
+            </div>
+          </div>
+          <div class="form-group row mb-2" >
+            <label class="col-md-2 col-form-label"
+            for="firstParticipantSurnameId">Surname:</label>
+  
+            <div class="col-md-8">
+              <input class="form-control"
+                     for="firstParticipantSurnameId"
+                     type="text"
+                     placeholder="Surname"
+                     [formControlName]="firstParticipantSurname" />
+            </div>
+          </div>
+          <div class="form-group row mb-2" >
+            <label class="col-md-2 col-form-label"
+            for="firstParticipantSmokingStatusId">Smoking:</label>
+  
+            <div class="col-md-8">
+              <input class="form-control"
+                     for="firstParticipantSmokingStatusId"
+                     type="text"
+                     placeholder="Smoke Status"
+                     [formControlName]="firstParticipantSmokingStatus" />
+            </div>
+          
+            <button class="col-md-1 btn btn-outline-warning btn-sm"
+                    type="button"
+                    title="Add Epp"
+                    (click)="addParticipants()">Add Epp
+            </button>
+          </div>
+          <hr>
+          <div></div>
+          <h5>2nd Participants</h5>
+          
+<div class="form-group row mb-2">
+  <div class="col-md-8">
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input"
+               id="secondEppId"
+               type="checkbox"
+               formControlName="secondEpp">Is Epp
+      </label>
+    </div>
+  </div>
+</div>
+
+
+          <div class="form-group row mb-2" >
+
+            <label class="col-md-2 col-form-label"
+            for="SecondParticipantFirstNameId">First Name:</label>
+  
+            <div class="col-md-8">
+              <input class="form-control"
+                     for="SecondParticipantFirstNameId"
+                     type="text"
+                     placeholder="First Name"
+                     [formControlName]="SecondParticipantFirstName" />
+            </div>
+          </div>
+          <div class="form-group row mb-2" >
+            <label class="col-md-2 col-form-label"
+            for="SecondParticipantSurnameId">Surname:</label>
+  
+            <div class="col-md-8">
+              <input class="form-control"
+                     for="SecondParticipantSurnameId"
+                     type="text"
+                     placeholder="Surname"
+                     [formControlName]="SecondParticipantSurname" />
+            </div>
+          </div>
+          <div class="form-group row mb-2" >
+            <label class="col-md-2 col-form-label"
+            for="SecondParticipantSmokingStatusId">Smoking:</label>
+  
+            <div class="col-md-8">
+              <input class="form-control"
+                     for="SecondParticipantSmokingStatusId"
+                     type="text"
+                     placeholder="Smoke Status"
+                     [formControlName]="SecondParticipantSmokingStatus" />
+            </div>
+          
+            <button class="col-md-1 btn btn-outline-warning btn-sm"
+                    type="button"
+                    title="Add Epp"
+                    (click)="addParticipants()">Add Epp
+            </button>
+          </div>
+    
+  
+        <!-- <div class="row">
+          <div class="col-md-2 mb-2">
+            <button class="btn btn-outline-secondary btn-sm"
+                    type="button"
+                    title="Add a search tag"
+                    (click)="addParticipants()">Show Participant
+            </button>
+          
+          </div>
+        </div>   -->
+        <div class="form-group row mb-2">
+          <div class="offset-md-2 col-md-4">
+            <button class="btn btn-primary mr-3"
+                    style="width:80px;"
+                    type="submit"
+                    [title]="willForm.valid ? 'Save your entered data' : 'Disabled until the form data is valid'"
+                    [disabled]="!willForm.valid">
+              Save
+            </button>
+            <button class="btn btn-outline-secondary mr-3"
+                    style="width:80px;"
+                    type="button"
+                    title="Cancel your edits"
+                    [routerLink]="['/Wills']">
+              Cancel
+            </button>
+            <!-- <button class="btn btn-outline-warning"
+                    style="width:80px"
+                    type="button"
+                    title="Delete this will"
+                    (click)="deleteWill()">
+              Delete
+            </button> -->
+          </div>
+        </div>
+      </form>
+    </div>
+  
+    <div class="alert alert-danger"
+         *ngIf="errorMessage">{{errorMessage}}
+    </div>
+
+    
+  </div>
+
+  

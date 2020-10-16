@@ -1,0 +1,521 @@
+{
+    "indCifRecFound": "Y",
+    "clientCode": "MULUA  001",
+    "initials": "A",
+    "language": "E",
+    "titleCode": "5",
+    "surname": "MULU",
+    "postlAddrLine1": "13 RES STREET",
+    "postlAddrLine2": {
+        "$": ""
+    },
+    "postlSuburb": {
+        "$": ""
+    },
+    "postlTown": "MALAN",
+    "postlCodeRsa": "2003",
+    "idDocType": "3",
+    "idNumber": "1245TEST",
+    "birthDate": "19700330",
+    "maritalStatus": "2",
+    "smsMarkInd": "N",
+    "gender": "1",
+    "minorChildren": "0",
+    "occupationCode": "0",
+    "incomeGroup": "0",
+    "bankingSector": "1",
+    "securityIndicator": "N",
+    "liabilityIndicator": "N",
+    "telebankIndicator": "N",
+    "unclaimedFundsInd": {
+        "$": ""
+    },
+    "branchClientOpened": "3232",
+    "dateClientOpened": "20061109",
+    "changeNumber": "4",
+    "dateLastChanged": "20061109",
+    "siteLastChanged": "0",
+    "tellerLastChanged": "0",
+    "nbrOfAccounts": "1",
+    "prohibitedInd": "N",
+    "postalAddrHold": "N",
+    "absaRewardIndctor": "N",
+    "idRequiredHold": "N",
+    "deceasedEstateHld": "N",
+    "deceasedSpouseHld": "N",
+    "insolvntEstateHld": "N",
+    "curatorshipHold": "N",
+    "savngStatementHold": "N",
+    "courtAuthrityHold": "N",
+    "thirdPartyInd": {
+        "$": ""
+    },
+    "mandateCaptureHld": "N",
+    "powerAttornyHold": "N",
+    "sbuSegment": "F",
+    "mariageContrctType": "0",
+    "homeLanguage": {
+        "$": ""
+    },
+    "marketingConcent": "N",
+    "clientType": "101",
+    "miltaryComtmntInd": "N",
+    "occupationType": {
+        "$": ""
+    },
+    "noOfJointPartcpnt": "0",
+    "taxNumber": "0",
+    "sicCode": "0",
+    "firstNames": "ANDY",
+    "insolventIndicator": "N",
+    "companyYearEnd": "0",
+    "homeTelCode": "0",
+    "homeTelephone": {
+        "$": ""
+    },
+    "workTelCode": "0",
+    "workTelephone": {
+        "$": ""
+    },
+    "physicalAddrHold": "N",
+    "employerAddrHold": "N",
+    "cellphone": "732548888",
+    "faxWorkCode": "0",
+    "faxWorkNumber": "0",
+    "faxHomeCode": "0",
+    "faxHomeNumber": "0",
+    "occupationStatus": "6",
+    "employmentSector": "0",
+    "occupationLevel": "0",
+    "practiceNumber": {
+        "$": ""
+    },
+    "clientWebsite": {
+        "$": ""
+    },
+    "contactPerson": {
+        "$": ""
+    },
+    "designation": "0",
+    "emailAddress": {
+        "$": ""
+    },
+    "inliPolicy": {
+        "$": ""
+    },
+    "exliPolicy": {
+        "$": ""
+    },
+    "instPolicy": {
+        "$": ""
+    },
+    "exstPolicy": {
+        "$": ""
+    },
+    "inivPolicy": {
+        "$": ""
+    },
+    "flexiFuneralPolicy": {
+        "$": ""
+    },
+    "prefrdCommtionMthd": "3",
+    "cellphoneBankInd": "N",
+    "siccCode5": "00000",
+    "subSegment": "F1",
+    "emailMarkInd": "N",
+    "teleMarkInd": "N",
+    "internetBankinInd": "N",
+    "sourceOfIncome": "0",
+    "dateIdentified": "0",
+    "dateVerified": "0",
+    "employeeIdentified": {
+        "$": ""
+    },
+    "employeeVerified": {
+        "$": ""
+    },
+    "vatRegistrationNo": {
+        "$": ""
+    },
+    "clientNationality": {
+        "$": ""
+    },
+    "countryOfOrigin": {
+        "$": ""
+    },
+    "dateNClntExempted": "0",
+    "dateAClntExempted": {
+        "$": ""
+    },
+    "statusOfExemption": "N",
+    "exemptionIndicator": {
+        "$": ""
+    },
+    "corporateDivision": "A",
+    "postMatricQualifd": "N",
+    "postMatricQualfton": "0",
+    "receiveSocialGrant": "N",
+    "notifyMeIndicator": {
+        "$": ""
+    },
+    "mailInd": "N",
+    "applyDebtCounsel": "N",
+    "dteApplyCounsel": "0",
+    "counselOrderIssue": "N",
+    "dteOrderIssue": "0",
+    "groupScheme": "0",
+    "groupSchemeEmp": {
+        "$": ""
+    },
+    "secondaryCard": "N",
+    "affectedPerson": "0",
+    "exconExpiryDate": "0",
+    "dateIssued": "0",
+    "ibrAffected": "N",
+    "clientGroup": "I",
+    "nbrOfAddressesRtrv": "1",
+    "addressEntry": [
+        {
+            "addrType": "0",
+            "addrSeqNbr": "0",
+            "addrLine1": "3  RES STREET",
+            "addrLine2": {
+                "$": ""
+            },
+            "addrSuburbRsa": {
+                "$": ""
+            },
+            "addrTown": "MALAN",
+            "addrPostlCode": "2003"
+        },
+        {
+            "addrType": "0",
+            "addrSeqNbr": "0",
+            "addrLine1": {
+                "$": ""
+            },
+            "addrLine2": {
+                "$": ""
+            },
+            "addrSuburbRsa": {
+                "$": ""
+            },
+            "addrTown": {
+                "$": ""
+            },
+            "addrPostlCode": "0"
+        },
+        {
+            "addrType": "0",
+            "addrSeqNbr": "0",
+            "addrLine1": {
+                "$": ""
+            },
+            "addrLine2": {
+                "$": ""
+            },
+            "addrSuburbRsa": {
+                "$": ""
+            },
+            "addrTown": {
+                "$": ""
+            },
+            "addrPostlCode": "0"
+        },
+        {
+            "addrType": "0",
+            "addrSeqNbr": "0",
+            "addrLine1": {
+                "$": ""
+            },
+            "addrLine2": {
+                "$": ""
+            },
+            "addrSuburbRsa": {
+                "$": ""
+            },
+            "addrTown": {
+                "$": ""
+            },
+            "addrPostlCode": "0"
+        },
+        {
+            "addrType": "0",
+            "addrSeqNbr": "0",
+            "addrLine1": {
+                "$": ""
+            },
+            "addrLine2": {
+                "$": ""
+            },
+            "addrSuburbRsa": {
+                "$": ""
+            },
+            "addrTown": {
+                "$": ""
+            },
+            "addrPostlCode": "0"
+        }
+    ],
+    "clsPercEntry": [
+        {
+            "classification": {
+                "$": ""
+            },
+            "percentage": "0"
+        },
+        {
+            "classification": {
+                "$": ""
+            },
+            "percentage": "0"
+        },
+        {
+            "classification": {
+                "$": ""
+            },
+            "percentage": "0"
+        }
+    ],
+    "tempPermitNbr": {
+        "$": ""
+    },
+    "permitExpDte": "0",
+    "subClassCde": {
+        "$": ""
+    },
+    "countryIncorp": {
+        "$": ""
+    },
+    "inBusinessRescue": {
+        "$": ""
+    },
+    "placedBy": "0",
+    "dateBusRescueIss": "0",
+    "ncaThreshold": {
+        "$": ""
+    },
+    "cpaThreshold": {
+        "$": ""
+    },
+    "nkinSurname": {
+        "$": ""
+    },
+    "nkinFname": {
+        "$": ""
+    },
+    "nkinRela": "0",
+    "nkinDcdh": {
+        "$": ""
+    },
+    "nkinTelh": {
+        "$": ""
+    },
+    "nkinDcdw": {
+        "$": ""
+    },
+    "nkinTelw": {
+        "$": ""
+    },
+    "nkinCell": {
+        "$": ""
+    },
+    "nkinEmail": {
+        "$": ""
+    },
+    "nkinTitle": "00",
+    "nkinInitials": {
+        "$": ""
+    },
+    "nkinJntSurname": {
+        "$": ""
+    },
+    "reasonCodeO": "0",
+    "duplClntCode": [
+        {
+            "duplCode": {
+                "$": ""
+            }
+        },
+        {
+            "duplCode": {
+                "$": ""
+            }
+        },
+        {
+            "duplCode": {
+                "$": ""
+            }
+        }
+    ],
+    "forensicHold": "N",
+    "updAddressInd": "N",
+    "updTelephoneInd": "N",
+    "updEmailInd": "N",
+    "updDateInd": "9112006",
+    "pingitWallet": "N",
+    "pingitReceive": "N",
+    "clntExstOnFica": "N",
+    "regAddrLine1": {
+        "$": ""
+    },
+    "regAddrLine2": {
+        "$": ""
+    },
+    "regSuburb": {
+        "$": ""
+    },
+    "regTown": {
+        "$": ""
+    },
+    "regCodeRsa": "0",
+    "hoAddrLine1": {
+        "$": ""
+    },
+    "hoAddrLine2": {
+        "$": ""
+    },
+    "hoSuburb": {
+        "$": ""
+    },
+    "hoTown": {
+        "$": ""
+    },
+    "hoCodeRsa": "0",
+    "countryResAddress": {
+        "$": ""
+    },
+    "countryHoAddress": {
+        "$": ""
+    },
+    "countryRegAddress": {
+        "$": ""
+    },
+    "countryEntOprtData": [
+        {
+            "countryEntOprt": {
+                "$": ""
+            }
+        },
+        {
+            "countryEntOprt": {
+                "$": ""
+            }
+        },
+        {
+            "countryEntOprt": {
+                "$": ""
+            }
+        },
+        {
+            "countryEntOprt": {
+                "$": ""
+            }
+        },
+        {
+            "countryEntOprt": {
+                "$": ""
+            }
+        },
+        {
+            "countryEntOprt": {
+                "$": ""
+            }
+        },
+        {
+            "countryEntOprt": {
+                "$": ""
+            }
+        },
+        {
+            "countryEntOprt": {
+                "$": ""
+            }
+        },
+        {
+            "countryEntOprt": {
+                "$": ""
+            }
+        },
+        {
+            "countryEntOprt": {
+                "$": ""
+            }
+        }
+    ],
+    "countryOfBirth": {
+        "$": ""
+    },
+    "mclInd": {
+        "$": ""
+    },
+    "finCrimeHold": "N",
+    "clntAgrmntIssued": "N",
+    "sec129DeliveryAddr": "0",
+    "saTaxRegis": {
+        "$": ""
+    },
+    "rsonSaTaxNotGiven": "0",
+    "foreignTaxRegis": {
+        "$": ""
+    },
+    "foreignTaxData": [
+        {
+            "foreignTaxCtry": {
+                "$": ""
+            },
+            "foreignTaxNo": {
+                "$": ""
+            },
+            "rsonFtaxNotGiven": "0"
+        },
+        {
+            "foreignTaxCtry": {
+                "$": ""
+            },
+            "foreignTaxNo": {
+                "$": ""
+            },
+            "rsonFtaxNotGiven": "0"
+        },
+        {
+            "foreignTaxCtry": {
+                "$": ""
+            },
+            "foreignTaxNo": {
+                "$": ""
+            },
+            "rsonFtaxNotGiven": "0"
+        },
+        {
+            "foreignTaxCtry": {
+                "$": ""
+            },
+            "foreignTaxNo": {
+                "$": ""
+            },
+            "rsonFtaxNotGiven": "0"
+        }
+    ],
+    "safeCustody": {
+        "$": ""
+    },
+    "safeCustBoxSmall": "0",
+    "safeCustBoxMedium": "0",
+    "safeCustBoxLarge": "0",
+    "safeCustEnvelope": "0",
+    "nonCreditIndicator": "N",
+    "nonCreditDateChanged": "20190218",
+    "nonCreditSms": "N",
+    "nonCreditEmail": "N",
+    "nonCreditAvoice": "N",
+    "nonCreditTelephone": "N",
+    "nonCreditPost": "Y",
+    "creditIndicator": "N",
+    "creditDateChanged": "20190218",
+    "creditSms": "N",
+    "creditEmail": "N",
+    "creditAvoice": "N",
+    "creditTelephone": "N",
+    "creditPost": "Y"
+}

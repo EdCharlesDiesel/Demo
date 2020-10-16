@@ -1,0 +1,55 @@
+<div class="card">
+  <div class="card-header">
+    {{pageTitle}}
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-10">
+        <div class="col-md-4">will by:</div>
+        <div class="col-md-4">
+          <input type="text"  />
+        </div>
+      </div>
+    
+    </div>
+    <br>  
+
+  <div class="table-responsive">
+    <table class="table mb-0" >
+      <thead>
+        <tr>
+          <th>Will Number</th>
+          <th>Client Code</th>
+          <th>Surname</th>
+          <th>Initials</th>          
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let will of filteredWills">
+          <td>{{ will.id }}</td>
+          <td>
+            <a [routerLink]="['/wills', will.id]">
+              {{ will.id }}
+            </a>
+          </td>          
+          
+          <td>{{ will.surname}}</td>
+          <td>{{ will.initials }}</td>
+          <td>
+            <button class="btn btn-outline-primary btn-sm"
+                    [routerLink]="['/wills', will.id, 'edit']">
+              Edit
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
+
+<div *ngIf="errorMessage"
+     class="alert alert-danger">
+  Error: {{ errorMessage }}
+</div>
